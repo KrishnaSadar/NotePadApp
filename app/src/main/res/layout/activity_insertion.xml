@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    android:padding="16dp"
+    tools:context=".InsertionActivity">
+
+    <EditText
+        android:id="@+id/title123"
+        android:layout_width="259dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textMultiLine"
+        android:isScrollContainer="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/insert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/date123"
+        android:layout_width="188dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="148dp"
+        android:hint="Date"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:textSize="20sp"
+        app:guidelineUseRtl="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="335dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="text|textAutoComplete|textCapSentences|textImeMultiLine|textMultiLine"
+        android:isScrollContainer="true"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title123" />
+
+    <android.widget.Button
+        android:id="@+id/insert"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginBottom="4dp"
+
+        android:background="@drawable/baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/attach"
+        android:layout_width="58dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/baseline_add_to_photos_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
